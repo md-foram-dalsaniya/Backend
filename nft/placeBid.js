@@ -286,10 +286,4 @@ async function placeBid(){
 }
 placeBid();
 
-// Withdraw funds
-const withdrawFunds = async () => {
-	const accounts = await web3.eth.getAccounts();
-	const result = await nftAuctionContract.methods.withdraw().send({from: accounts[0]});
-	console.log(result);
-  }
-  withdrawFunds();
+
